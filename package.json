@@ -22,6 +22,7 @@
     "npm"
   ],
   "author": "Jirat Ki. (n3tr)",
+  "repository": "n3tr/npm-template",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.5.2",
