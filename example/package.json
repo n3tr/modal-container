@@ -1,0 +1,19 @@
+{
+  "name": "my-example",
+  "version": "1.0.0",
+  "description": "My Example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jirat Ki. (n3tr)",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.5.2",
+    "babel-loader": "^6.2.2",
+    "babel-preset-es2015": "^6.5.0",
+    "eslint-config-airbnb": "^5.0.1",
+    "eslint-plugin-react": "^3.16.1",
+    "webpack": "^1.12.13"
+  }
+}

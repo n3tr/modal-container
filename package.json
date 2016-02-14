@@ -12,7 +12,9 @@
     "build:commonjs": "rimraf lib && babel src -d lib",
     "build:es6": "rimraf es6 && babel ./src -d es6 --blacklist=es6.modules",
     "build:umd": "NODE_ENV=development webpack",
-    "build:umd:min" : "NODE_ENV=production webpack -p",
+    "build:umd:min": "NODE_ENV=production webpack -p",
+    "build:example": "NODE_ENV=development webpack --confing example/webpack.config.js",
+    "build:example:watch": "NODE_ENV=development webpack --config ./example/webpack.config.js --watch",
     "build": "npm run build:commonjs && npm run build:es6 && npm run build:umd && npm run build:umd:min",
     "prepublish": "npm run clean && npm run test && npm run build"
   },
