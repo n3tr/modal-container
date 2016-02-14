@@ -1,0 +1,41 @@
+{
+  "name": "npm-template",
+  "version": "1.0.0",
+  "description": "Minimal NPM Template, Babel with ES6 and React Presets",
+  "main": "lib/index",
+  "jsnext:main": "es6/index",
+  "scripts": {
+    "clean": "rimraf lib dist es6",
+    "lint": "eslint src test",
+    "test": "mocha --compilers js:babel-register --recursive",
+    "test:watch": "npm test -- --watch",
+    "build:commonjs": "rimraf lib && babel src -d lib",
+    "build:es6": "rimraf es6 && babel ./src -d es6 --blacklist=es6.modules",
+    "build:umd": "NODE_ENV=development webpack",
+    "build:umd:min" : "NODE_ENV=production webpack -p",
+    "build": "npm run build:commonjs && npm run build:es6 && npm run build:umd && npm run build:umd:min",
+    "prepublish": "npm run clean && npm run test && npm run build"
+  },
+  "keywords": [
+    "tempalte",
+    "babel",
+    "npm"
+  ],
+  "author": "Jirat Ki. (n3tr)",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.5.2",
+    "babel-eslint": "^4.1.8",
+    "babel-loader": "^6.2.2",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-register": "^6.5.2",
+    "eslint": "^1.7.3",
+    "eslint-config-airbnb": "^5.0.1",
+    "eslint-plugin-react": "^3.16.1",
+    "expect": "^1.14.0",
+    "mocha": "^2.4.5",
+    "rimraf": "^2.5.2",
+    "webpack": "^1.12.13"
+  }
+}
