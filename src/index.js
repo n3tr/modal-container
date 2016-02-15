@@ -1,5 +1,3 @@
-import sayHi from './sayHi'
+import ModalContainer from './ModalContainer'
 
-export {
-  sayHi,
-}
+export default ModalContainer

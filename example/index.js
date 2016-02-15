@@ -1,3 +1,5 @@
-import { sayHi } from 'npm-template'
+import React from 'react'
+import ReactDOM from 'react-dom'
+import App from './app'
 
-sayHi('Net')
+ReactDOM.render(<App />, document.getElementById('app'))
