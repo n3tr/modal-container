@@ -1,6 +1,6 @@
 {
-  "name": "npm-template",
-  "version": "1.0.0",
+  "name": "modal-container",
+  "version": "0.0.1",
   "description": "Minimal NPM Template, Babel with ES6 and React Presets",
   "main": "lib/index",
   "jsnext:main": "es6/index",
@@ -27,6 +27,7 @@
   "repository": "n3tr/npm-template",
   "license": "ISC",
   "devDependencies": {
+    "babel-cli": "^6.5.1",
     "babel-core": "^6.5.2",
     "babel-eslint": "^4.1.8",
     "babel-loader": "^6.2.2",

@@ -6,7 +6,7 @@ var env = process.env.NODE_ENV
 
 // use for compile library use for script tag
 // https://webpack.github.io/docs/library-and-externals.html
-var libraryName = 'YourGlobalLibName'
+var libraryName = 'ModalContainer'
 var fileName = libraryName + (env === 'production' ? '.min' : '') + '.js'
 
 var config = {
