@@ -1,9 +1,18 @@
 {
   "name": "modal-container",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Minimal NPM Template, Babel with ES6 and React Presets",
   "main": "lib/index",
   "jsnext:main": "es6/index",
+  "files": [
+    "*.md",
+    "docs",
+    "es6",
+    "lib",
+    "src/*.js",
+    "npm-scripts",
+    "umd"
+  ],
   "scripts": {
     "clean": "rimraf lib dist es6",
     "lint": "eslint src test",
@@ -19,13 +28,15 @@
     "prepublish": "npm run clean && npm run test && npm run build"
   },
   "keywords": [
-    "tempalte",
-    "babel",
-    "npm"
+    "react",
+    "modal"
   ],
   "author": "Jirat Ki. (n3tr)",
-  "repository": "n3tr/npm-template",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n3tr/modal-container.git"
+  },
+  "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.5.1",
     "babel-core": "^6.5.2",

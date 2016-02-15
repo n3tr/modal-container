@@ -1,5 +1,5 @@
 import React from 'react'
-import ModalContainer from 'npm-template'
+import ModalContainer from 'modal-container'
 
 class App extends React.Component {
   constructor(props) {
