@@ -1,6 +1,6 @@
 {
   "name": "modal-container",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Minimal NPM Template, Babel with ES6 and React Presets",
   "main": "lib/index",
   "jsnext:main": "es6/index",
