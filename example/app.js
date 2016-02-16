@@ -15,7 +15,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <ModalContainer ref={(modal) => this.modal = modal}>
+        <ModalContainer isOpen={true} ref={(modal) => this.modal = modal}>
           <div style={
               {
                 position: 'relative',
